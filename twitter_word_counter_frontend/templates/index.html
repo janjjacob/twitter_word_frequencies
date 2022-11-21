@@ -21,9 +21,7 @@
         <input type="submit" value="OK" />
       </form>
       <h1>Welcome to My Website</h1>
-      {% for i in words %}
-      <li>{{ i }}</li>
-      {% endfor %}
+      {% autoescape off %} {{plot_div}} {% endautoescape %}
     </main>
   </body>
 </html>
